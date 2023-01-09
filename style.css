@@ -5,9 +5,13 @@
 }
 main{
     display: flex;
-   justify-content: center;
+   align-items: flex-start;
 }
 .text-area{
     width: 40vw;
-    height: 90vh;
+    margin: 0 0 0 auto;
+   
+}
+article {
+    margin-top: 10rem;
 }
