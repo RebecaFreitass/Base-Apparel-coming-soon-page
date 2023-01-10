@@ -3,10 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: "Josefin-300";
+    src: url("Josefin_sans/static/JosefinSans-Light.ttf");
+}
+@font-face {
+    font-family: "Josefin-400";
+    src: url("Josefin_sans/static/JosefinSans-Regular.ttf");
+}
+@font-face {
+    font-family: "Josefin-600";
+    src: url("Josefin_sans/static/JosefinSans-SemiBold.ttf");
+}
 body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-image: url(images/bg-pattern-desktop.svg);
 }
 #img-material{
     width: 31.6rem;
@@ -17,6 +30,71 @@ body{
     margin-top: 2rem;
 }
 
-article h1{
+ul{
     font-size: 3rem;
+    text-transform: uppercase; 
+    list-style-type: none;
+    letter-spacing: 1rem;
+    margin-top: 7rem;
+    line-height: 3.5rem;
+}
+ul #li1{
+    font-family: "Josefin-300"; 
+    color: hsl(0, 36%, 70%);
+}
+ul .lis{
+    font-family: "Josefin-600";
+    color: hsl(0, 6%, 24%);
+}
+
+article p{
+    font-family: "Josefin-400";
+    color: hsl(0, 36%, 70%);
+    margin: 1.5rem 0;
+    line-height: 1.5rem;
+    width: 28rem;
+}
+form{
+    display: flex;
+    position: relative;
+}
+#email{
+    border: 1px solid hsl(0, 36%, 70%) ;
+    border-radius: 2rem;
+    width: 24rem;
+    padding: 1rem ;
+    margin-bottom: 0.5rem;
+}
+
+#email::placeholder{
+    color: hsla(0, 36%, 70%, 0.76);;
+    font-family: "Josefin-600"; 
+   
+}
+#button {
+    padding: 0rem 2.5rem;
+    border-radius: 2rem;
+    border: none;
+    background-image: linear-gradient(to right, hsl(0, 36%, 70%) , hsl(0, 93%, 68%));
+    cursor: pointer;
+    height: 3.1rem;
+    box-shadow: 0 5px 12px #00000033;
+    position: absolute;
+    left: 21rem;
+}
+#error-alert{
+    color: rgba(255, 0, 0, 0.733);
+    margin-left:  2rem;
+    font-family: "Josefin-400";
+    font-size: 0.8rem;
+    display: none;
+}
+#icon-error {
+    position: absolute;
+    top: 0.8rem;
+    left: 19rem;
+    display: none;
+}
+.attribution{
+    margin-top: 5rem;
 }

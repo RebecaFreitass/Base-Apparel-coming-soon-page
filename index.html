@@ -22,7 +22,11 @@
 <main>
   <section class="text-area">
       <article>
-        <h1><span>We're</span> coming soon</h1>
+        <ul>
+          <li id="li1">WE'RE</li>
+          <li class="lis">COMING </li>
+          <li class="lis">SOON</li>
+        </ul> 
         <p>
           Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our launch deals.
@@ -30,8 +34,13 @@
         </p>
       </article>
       <form action="" id="form">
-        <input type="email" name="" id="email" placeholder="Email Address">
-        <button type="submit"><img src="images/icon-arrow.svg" alt=""></button>
+        <div>
+          <input type="email" name="" id="email" placeholder="Email Address" oninput="emailValidate()">
+           <img id="icon-error" src="images/icon-error.svg"  alt="">
+           <span id="error-alert"> <br>Please provid a valid email</span>
+        </div>
+        
+        <button type="submit" id="button"><img src="images/icon-arrow.svg" alt=""></button>
       </form>
   </section>
   <div>
@@ -45,6 +54,6 @@
 <div class="img-area">
   <img id="img-material" src="images/hero-desktop.jpg" alt="">
 </div>
-
 </body>
+<script src="validation.js"></script>
 </html>
